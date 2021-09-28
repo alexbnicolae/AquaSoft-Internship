@@ -1,0 +1,31 @@
+GET http://localhost:3000/employees
+
+###
+
+
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "Name": "Gion",
+    "Address": "Strada 1",
+    "Email": "gion@email.com",
+    "Hire_date": "2021-09-28",
+    "Salary": 399,
+    "Job_title": "Dev"
+}
+
+###
+DELETE http://localhost:3000/employees/6153373d2254d6b687292cf8
+
+###
+PATCH http://localhost:3000/employees/6153375df58a59c91143d5ed
+Content-Type: application/json
+
+{
+    "Name": "Alex"
+}
+
+### 
+
+GET http://localhost:3000/employees/Alex
