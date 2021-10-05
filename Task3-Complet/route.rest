@@ -1,0 +1,63 @@
+GET http://localhost:3000/employees
+
+###
+
+
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "Name": "Haos",
+    "Adress": "Strada 12",
+    "Email": "gion@email.com",
+    "Hire_date": "2021-09-28",
+    "Salary": 399,
+    "Job_title": "Dev"
+}
+
+###
+DELETE http://localhost:3000/employees/6153375ef58a59c91143d5f1
+
+###
+PATCH http://localhost:3000/employees/615b1f733a79da01bb1361b9
+Content-Type: application/json
+
+{
+     "project_id": "615c4ef737fa21086b6f448b"
+}
+
+### 
+
+GET http://localhost:3000/employees/Andrei
+
+###
+
+GET http://localhost:3000/projects
+
+###
+
+POST http://localhost:3000/projects
+Content-Type: application/json
+
+{
+    "project_name": "proj2",
+    "start_date": "2021-08-14",
+    "planned_end_datetime": "2021-09-14",
+    "description": "haos",
+    "project_code": "muuult cod"
+}
+
+###
+PATCH http://localhost:3000/projects/6154ec9f4b542a6689a934c2
+Content-Type: application/json
+
+{
+    "description": "hmmm"
+}
+
+###
+
+DELETE http://localhost:3000/projects/615c1d4970709e6625229ed7
+
+###
+GET http://localhost:3000/projects/615b1f733a79da01bb1361b9/project
